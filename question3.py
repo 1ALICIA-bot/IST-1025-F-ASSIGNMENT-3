@@ -1,14 +1,21 @@
-def addition(num1,num2):
-    return num1+num2
-def minus(num1,num2):
-    return num1-num2
-num1=int(input("Enter the value of the first number"))
-num2=int(input("Enter the value of the second number"))
-sum_result=addition(num1,num2)
-difference_result=minus(num1,num2)
+def temperature_analysis():
+    temperatures = []
 
-print("The sum is:",sum_result)
-print("The difference is:",difference_result)
+    for i in range(7):
+        temp = float(input(f"Enter temperature for day {i+1}: "))
+        temperatures.append(temp)
+
+    highest = max(temperatures)
+    lowest = min(temperatures)
+    total = sum(temperatures)
+    average = total / 7
+
+    print(f"Highest Temperature: {highest}")
+    print(f"Lowest Temperature: {lowest}")
+    print(f"Sum of Temperatures: {total}")
+    print(f"Average Temperature: {average:.2f}")
+
+temperature_analysis()
 
 
 
