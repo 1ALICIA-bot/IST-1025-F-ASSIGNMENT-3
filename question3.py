@@ -5,6 +5,7 @@ def temperature_analysis():
         temp = float(input(f"Enter temperature for day {i+1}: "))
         temperatures.append(temp)
 
+
     highest = max(temperatures)
     lowest = min(temperatures)
     total = sum(temperatures)
@@ -16,6 +17,9 @@ def temperature_analysis():
     print(f"Average Temperature: {average:.2f}")
 
 temperature_analysis()
+
+
+
 
 
 
